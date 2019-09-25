@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title>Login</title>
+</head>
+<body>
+<div id="container">
+    <div class="header">
+        <h2>LOGIN</h2><br>
+    </div><br><br>
+    {%- for category, message in get_flashed_messages(with_categories = true) %}
+    <div class = "alertalert-danger">
+            {{ message }}
+    </div>
+      {%- endfor %}
+    <div class="form">
+      <form action = "{{url_for('superlogin')}}" method = "POST" class="form">
+         <label for = "username">Name</label>
+         <input type = "text" name = "username" placeholder = "Name" /><br>
+          <label for = "password">Password</label>
+         <input type = "password" name = "password" placeholder = "Password" /><br><br>
+           <select name="roles">
+              <option value = "Superuser">SUPER USER </option>
+              <option value = "Manager">MANAGER</option>
+              <option value = "Employee">EMPLOYEE</option>
+          </select>
+	<center>
+         <input type = "submit" value = "LOGIN" />
+	 </center>
+      </form>
+    </div>
+</body>
+</html>

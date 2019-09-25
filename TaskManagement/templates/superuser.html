@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <title>SUPER ADMIN PAGE</title>
+</head>
+<body>
+<div id="container">
+    <div class="header">
+        <h2>SUPER ADMIN PAGE</h2>
+    </div>
+
+    {%- for category, message in get_flashed_messages(with_categories = true) %}
+    <div class = "alertalert-danger">
+            {{ message }}
+    </div>
+      {%- endfor %}
+
+    <div class="form">
+      <form action = "{{ url_for('assigntasks') }}" method = "POST" class="form">
+         <label for = "towhom">Name of person</label><br>
+         <input type = "text" name = "towhom" placeholder = "To whom you want to dedicate the task to" /><br>
+         <label for = "date">Date</label><br>
+         <input type = "text" name = "date" placeholder = "Date of completion" /><br>
+         <label for = "taskmsg">Message</label><br>
+         <textarea name = "taskmsg" placeholder = "Message you want give"></textarea><br><br>
+          <select name="status">
+              <option value = "highpriority">HIGH PRIORITY </option>
+              <option value = "mediumpriority">MEDIUM PRIORITY</option>
+              <option value = "lowpriority">LOW PRIORITY</option>
+          </select><br><br>
+          <select name="roles">
+              <option value = "Manager">MANAGER</option>
+              <option value = "Employee">EMPLOYEE</option>
+          </select>
+          <center>
+                 <input type = "submit" value = "Register" />
+          </center>
+      </form>
+    </div>
+
+</div>
+
+</body>
+</html>

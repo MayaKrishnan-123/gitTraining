@@ -1,0 +1,33 @@
+body{
+height:100%;
+width:100%;
+background-image: url("bg2.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+}
+.header
+{
+width: 100%;
+text-align:center;
+}
+.header h2{
+font-style:italic;
+font-size:40px;
+color: white;
+}
+.navcontainer{
+width:100%;
+text-align:center;
+}
+.navcontainer a{
+color:white;
+font-style: italic;
+}
+.navcontainer a:hover{
+color:darkblue;
+text-decoration:underline;
+}
+
+
+
+

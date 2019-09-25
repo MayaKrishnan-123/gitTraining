@@ -1,0 +1,70 @@
+body
+{
+background-image: url("background.jpg");
+}
+#container .header
+{
+width: 100%;
+float: left;
+margin-left: 30%;
+}
+#container .header h2
+{
+color: white;
+font-size: 25px;
+}
+#container .nav-container
+{
+float:left;
+margin-top:5%;
+}
+
+.form input[type=text]
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+background-color: #d6d6d6;
+color: black;
+}
+.form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #d6d6d6;
+  resize: white;
+  color: black;
+}
+.form input[type=submit]
+{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.form input[type=password]
+{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+background-color: #d6d6d6;
+color: black;
+}
+.form label
+{
+color: white;
+}
+#container .alertalert-danger
+{
+color:white;
+}

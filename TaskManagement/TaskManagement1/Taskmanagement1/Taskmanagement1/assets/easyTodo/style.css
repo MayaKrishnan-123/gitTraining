@@ -1,0 +1,15 @@
+body{
+height:100%;
+width:100%;
+background-image: url("bg2.jpg");
+}
+.heading{
+font-style:italic;
+font-size:40px;
+}
+.header{
+
+  margin-right: 150px;
+ }
+
+
